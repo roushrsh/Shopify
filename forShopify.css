@@ -1,0 +1,136 @@
+/*
+$text-color: #FFF;
+$brand-dark: #000639;
+$brand-light: #5c6ac4;
+$success-color: #7AB55C;
+$error-color: #C23628;
+
+$base-font-size: 16px;
+$title-font-size: 24px;
+$field-status-font-size: 13px;
+*/
+html, body {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body{ /*Body features obv*/
+    background-color: #000639 ;
+      min-height: 100%;
+}
+
+
+.container{
+    padding-top: 14%;
+    
+}
+
+.headerMain{ /*//header for Main Title*/
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+
+.description{ /*//description text features; atm below Header*/
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.errorFile{ /* when error*/
+  color: #C23628;
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.correctFile{ /* when email is good*/
+    color: #7AB55C;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;   
+}
+
+
+
+
+.inputOut{
+  text-align: center; 
+}
+
+
+
+.inputbox{
+    font-size: 20px;
+    width: 260px;
+    height: 50px;
+    border-radius: 7px; /*make round edges*/
+    border: none;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+
+
+button.signUp{
+  
+  margin: auto;
+  background-color: #5c6ac4;
+  color: #FFF;
+  font-size: 16px;
+  width: 150px;
+  min-width: 100px;
+  height: 50px;
+/*   padding: 5px;*/
+  border-radius: 5px;
+  border: none;
+vertical-align: middle    
+    
+
+}
+input[type=text]{
+    box-sizing : border-box;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 650px){ /*some small things for mobile*/
+
+    
+ 
+    .inputbox{
+        display:block;
+        padding: 0px;
+        width: 180px;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        
+    }
+    
+    button.signUp{
+        display:block;
+        margin: auto;
+        margin-top: 5px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1000px){ /*for 1080 res screens*/
+   
+    html, body {
+    transform: scale(1.4, 1.4);
+        margin-top: 20px;
+    }
+}
